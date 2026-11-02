@@ -1,4 +1,4 @@
-# LightShot
+# Flickshot
 
 A native Apple Silicon replacement for [Lightshot](https://app.prntscr.com/), whose Mac app is Intel-only and needs Rosetta.
 
@@ -8,9 +8,9 @@ A native Apple Silicon replacement for [Lightshot](https://app.prntscr.com/), wh
 ./build.sh install
 ```
 
-This builds `build/LightShot.app` (arm64, ad-hoc signed), copies it to `/Applications` and launches it. Requires macOS 14+ and the Xcode Command Line Tools.
+This builds `build/Flickshot.app` (arm64, ad-hoc signed), copies it to `/Applications` and launches it. Requires macOS 14+ and the Xcode Command Line Tools.
 
-On first launch, grant **Screen & System Audio Recording** in System Settings → Privacy & Security. Every rebuild gets a new ad-hoc signature, so after reinstalling you may need to remove LightShot from that list and add it again.
+On first launch, grant **Screen & System Audio Recording** in System Settings → Privacy & Security. Every rebuild gets a new ad-hoc signature, so after reinstalling you may need to remove Flickshot from that list and add it again.
 
 ## Usage
 

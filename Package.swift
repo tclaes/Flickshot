@@ -2,12 +2,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "LightShot",
+    name: "Flickshot",
     platforms: [.macOS(.v14)],
     targets: [
         .executableTarget(
-            name: "LightShot",
-            path: "Sources/LightShot",
+            name: "Flickshot",
+            path: "Sources/Flickshot",
             swiftSettings: [.swiftLanguageMode(.v5)]
         )
     ]

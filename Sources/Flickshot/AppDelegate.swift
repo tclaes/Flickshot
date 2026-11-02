@@ -10,7 +10,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        let icon = NSImage(systemSymbolName: "camera.viewfinder", accessibilityDescription: "LightShot")
+        let icon = NSImage(systemSymbolName: "camera.viewfinder", accessibilityDescription: "Flickshot")
         icon?.isTemplate = true
         statusItem.button?.image = icon
         statusItem.menu = buildMenu()
@@ -33,7 +33,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem(title: "Launch at Login", action: #selector(toggleLaunchAtLogin(_:)), keyEquivalent: ""))
         menu.addItem(NSMenuItem(title: "Screen Recording Settings…", action: #selector(openPrivacySettings), keyEquivalent: ""))
         menu.addItem(.separator())
-        menu.addItem(NSMenuItem(title: "Quit LightShot", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        menu.addItem(NSMenuItem(title: "Quit Flickshot", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
         menu.items.forEach { if $0.action != #selector(NSApplication.terminate(_:)) { $0.target = self } }
         menu.delegate = self
         return menu
@@ -90,8 +90,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             alert.runModal()
             return
         }
-        alert.messageText = "LightShot needs Screen Recording permission"
-        alert.informativeText = "Turn on LightShot under Privacy & Security → Screen & System Audio Recording, then try again. "
+        alert.messageText = "Flickshot needs Screen Recording permission"
+        alert.informativeText = "Turn on Flickshot under Privacy & Security → Screen & System Audio Recording, then try again. "
             + "If it's already on, remove it with “–” and add it again (rebuilt apps get a new signature)."
         alert.addButton(withTitle: "Open Settings")
         alert.addButton(withTitle: "Cancel")
@@ -102,7 +102,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.activate(ignoringOtherApps: true)
         let alert = NSAlert()
         alert.messageText = "⌥⌘S is already in use"
-        alert.informativeText = "Another app (probably the old Lightshot) owns this shortcut. Quit it and relaunch LightShot, "
+        alert.informativeText = "Another app (probably the old Lightshot) owns this shortcut. Quit it and relaunch Flickshot, "
             + "or use the menu bar icon to take screenshots."
         alert.runModal()
     }
