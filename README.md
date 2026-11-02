@@ -12,6 +12,8 @@ This builds `build/Flickshot.app` (arm64, ad-hoc signed), copies it to `/Applica
 
 On first launch, grant **Screen & System Audio Recording** in System Settings → Privacy & Security. Every rebuild gets a new ad-hoc signature, so after reinstalling you may need to remove Flickshot from that list and add it again.
 
+Prebuilt versions are attached to [Releases](https://github.com/tclaes/Flickshot/releases). They are not notarized by Apple, so building from source is the recommended way to install.
+
 ## Usage
 
 | Action | How |
@@ -25,3 +27,7 @@ On first launch, grant **Screen & System Audio Recording** in System Settings �
 | Save | ⌘S |
 | Undo | ⌘Z |
 | Cancel | Esc or right-click |
+
+## License
+
+[MIT](LICENSE)
