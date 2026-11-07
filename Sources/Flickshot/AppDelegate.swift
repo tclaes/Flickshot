@@ -10,9 +10,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        let icon = NSImage(systemSymbolName: "camera.viewfinder", accessibilityDescription: "Flickshot")
-        icon?.isTemplate = true
-        statusItem.button?.image = icon
+        statusItem.button?.image = MenuBarIcon.make()
         statusItem.menu = buildMenu()
 
         // Same default as Lightshot for Mac: ⌥⌘S.

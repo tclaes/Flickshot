@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="260 260 504 504" role="img" aria-label="Flickshot">
+  <!-- One-colour mark (menu bar / template use). Inherits currentColor. -->
+  <path d="M300 420V300h120M604 300h120v120M724 604v120H604M420 724H300V604" fill="none" stroke="currentColor" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M352 668C470 650 570 560 601 376A40 40 0 0 1 679 392C646 572 520 668 352 668Z" fill="currentColor"/>
+</svg>
