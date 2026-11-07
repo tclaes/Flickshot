@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Flickshot">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34383e"/>
+      <stop offset="1" stop-color="#141517"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".14"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="flick" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#9fdc00"/>
+      <stop offset="1" stop-color="#e4ff4f"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <!-- macOS icon grid: 824px body on a 1024 canvas -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#body)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#sheen)"/>
+  <rect x="101.5" y="101.5" width="821" height="821" rx="184.5" fill="none" stroke="#fff" stroke-opacity=".08" stroke-width="3"/>
+  <!-- selection corners -->
+  <path d="M300 420V300h120M604 300h120v120M724 604v120H604M420 724H300V604" fill="none" stroke="#f4f5f2" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- the flick -->
+  <path d="M352 668C470 650 570 560 601 376A40 40 0 0 1 679 392C646 572 520 668 352 668Z" fill="#c8f53a" opacity=".45" filter="url(#glow)"/>
+  <path d="M352 668C470 650 570 560 601 376A40 40 0 0 1 679 392C646 572 520 668 352 668Z" fill="url(#flick)"/>
+</svg>
